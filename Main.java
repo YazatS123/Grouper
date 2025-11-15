@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) throws Exception {
         
         // Get values from names.txt and save them to the HashMap
-        HashMap<String, Integer[]> df = new HashMap<String, Integer[]>();
+        HashMap<String, Integer[]> df = new HashMap<>();
         String[] names = new String[0];
         Scanner scanner = new Scanner(new File("names.txt"));
         while (scanner.hasNext()) {
@@ -21,8 +21,8 @@ public class Main {
         }
         
         // Test output
-        for (int i = 0; i < names.length; i++) {
-            System.out.println(names[i] + ": " + df.get(names[i])[0] + " " + df.get(names[i])[1] + " " + df.get(names[i])[2]);
+        for (String name : names) {
+            System.out.println(name + ": " + df.get(name)[0] + " " + df.get(name)[1] + " " + df.get(name)[2]);
         }
     }
 }
