@@ -1,3 +1,4 @@
+3
 Alex	3	2	1
 Betty	2	3	1
 Charles	3	2	1
