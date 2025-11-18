@@ -31,9 +31,11 @@ public class Main {
         
         
         // Test output
-        /* for (String name : names) {
+        for (String name : names) {
             System.out.println(name + ": " + df.get(name)[0] + " " + df.get(name)[1] + " " + df.get(name)[2]);
-        } */
+        }
         HashMap<String, Double[]> positions = PositionFinder.plot(df, names, categories);
+        Writer.clear();
+        System.out.println("does ts ever show");
     }
 }
